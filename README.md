@@ -3,9 +3,6 @@
 Feb14: Create rails app.
 feb17: watch model view controller.
 3. Watch model view controller
-take off today.
-Doing code review for some pojects
-
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
