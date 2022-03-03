@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
       redirect_to @article
     else
       render :new, status: :unprocessable_entity
+    end
   end
   private
   def article_params
