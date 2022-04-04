@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  username: demoblogapp
+  password: uiop7890
+
+development:
+  <<: *default
+  database: demoblogapp_development
+
+test:
+  <<: *default
+  database: demoblogapp_test
+
+production:
+  <<: *default
+  database: demoblogapp_production
+  username: demoblogapp
+  password: <%= ENV["DEMOBLOGAPP_DATABASE_PASSWORD"] %>
